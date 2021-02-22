@@ -1,53 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-</html>
+
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Marta Magui</title>
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleee.css">
     <meta name="author" content="Marta Molina Aguilera">
-    <meta charset="utf-8">
-    <script src="scripts/scripts.js"></script>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 </head>
-<!--Last time this code was updated-->>
+<!--Last time this code was updated 21-02-2021-->
 
 <body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
+    integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+    crossorigin="anonymous"></script>
     <div class="container">
         <!-- Header-->
         <header>
-            <div class="container">
+            <div class="container" id="nav-bar">
                 <div class="row">
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Projects</a></li>
-                            <li><a href="#">Contac</a></li>
+                            <li><a href="#Home">Home</a></li>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#Projects">Projects</a></li>
+                            <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </header>
         <!--- Intro-->
-        <div class="row">
-            <h1>Hi!<br>It's me, Marta!</h1>
-            <p>Nice to meet you!</p>
-            <button>Let's talk!</button>
+        <div class="row h-100" id="Home">
+            <div class="col" id="IntroducingMySelf" > 
+                <h1  id="Greeting" class="typing"></h1>
+                <p>Nice to meet you!</p>
+                <button>Let's talk!</button>
+            </div>    
         </div>
         <!--About-->
         <div class="row">
             <div>
                 <h2>About</h2>
-                <span>blbalbballbal</span>
+                <span>
+                    My name is Marta, I'm a Software Development student (VT II). I'm currently coursing my first year at
+                    U-tad and what can I say... I'm loving it. Look at me, I started this course doubting about if this
+                    was my "thing", was I really meant to learn this?... But the programming world was an exciting
+                    adventure waiting to be discovered. I'm really enjoying to learn new stuff every day. I can't wait
+                    for the
+                    next thing. I'm always craving to learn more, searching on Youtube and Google.<br>
+                    I'm really having fun on my way to become a programmer-lady.
+                </span>
             </div>
             <div>
                 <!--Que estoy aprendiendo y qué quiero aprender . Java. html css js git mysql.-->
@@ -63,7 +71,9 @@
         <div class="row">
         </div>
     </div>
-
+    <script src="scripts/app.js"></script>
+ 
+    
 </body>
 
 </html>
