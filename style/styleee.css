@@ -1,5 +1,4 @@
 * {
-    width: 100%;
     margin: 0%;
     padding: 0%;
 }
@@ -7,7 +6,8 @@
     background-image: url("img/curves.jpg");
     background-size: cover;
 }*/
-#Home{
+
+/*#Home{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -19,4 +19,5 @@
 #Greeting{
     display: inline-block;
     box-sizing: border-box; 
-}
+}*/
+
