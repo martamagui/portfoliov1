@@ -46,3 +46,4 @@ function loop() {
     setTimeout(loop, typingSpeed);
 }
 loop();
+//----------- Button transition -----------

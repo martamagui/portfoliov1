@@ -2,22 +2,27 @@
     margin: 0%;
     padding: 0%;
 }
-/*#Home{
-    background-image: url("img/curves.jpg");
-    background-size: cover;
-}*/
-
-/*#Home{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
-#text{
-    display: inline-block;
+#navigation{
+    width: 100%;
+    display: flex;
+    justify-content: end;
     box-sizing: border-box;
 }
-#Greeting{
-    display: inline-block;
-    box-sizing: border-box; 
-}*/
-
+ul{
+    width: 100%;
+}
+li{
+    width: 25%;
+}
+#Home{
+    height: 95%;
+    padding: 20% 0%;
+}
+#About{
+    padding: 5% 0%;  
+}
