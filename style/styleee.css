@@ -21,6 +21,13 @@ ul{
 li{
     width: 25%;
 }
+#Home{
+    font-size: 1.5vw;
+}
+#Home h1{
+    font-size: 3.5vw;
+}
+
 .image__background{
     width: 100%;
     height: 100%;
