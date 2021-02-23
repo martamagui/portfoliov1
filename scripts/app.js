@@ -1,5 +1,5 @@
 /**
- * @author Marta Molina Aguilera
+ * @author Marta Molina Aguilera (Está en inglés porque supongo que si uso esto para buscar trabajo lo van a mirar por dentro.)
  */
 
 //-----------Home Page-----------
@@ -46,4 +46,4 @@ function loop() {
     setTimeout(loop, typingSpeed);
 }
 loop();
-//----------- Button transition -----------
+//----------- Button transition ----------- WIP

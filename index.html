@@ -19,61 +19,59 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <!-- Body-->
     <div class="container-fluid">
         <!-- Header/Nav-->
-        <header>
-            <div class="row" id="navigation">
-                <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#target">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="target">
-                        <a class="navbar-brand"> <img src="img/VectorW.png" alt="chair logo"></a>
-                        <span>Marta Molina Aguilera</span>
-                        <ul class="navbar-nav">
-                            <li class="nav-item-active"><a href="#Home" class="nav-link ">Home</a></li>
-                            <li class="nav-item "><a href="#About" class="nav-link">About</a></li>
-                            <li class="nav-item "><a href="#Projects" class="nav-link">Projects</a></li>
-                            <li class="nav-item "><a href="#Contact" class="nav-link">Contact</a></li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
+        <header class="row" id="navigation">
+            <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#target">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="target">
+                    <a class="navbar-brand"> <img src="img/VectorW.png" alt="chair logo"></a>
+                    <span class="text-light p-1">Marta M. Aguilera</span>
+                    <ul class="navbar-nav">
+                        <li class="nav-item-active"><a href="#Home" class="nav-link text-light">Home</a></li>
+                        <li class="nav-item "><a href="#About" class="nav-link text-light">About</a></li>
+                        <li class="nav-item "><a href="#Projects" class="nav-link text-light">Projects</a></li>
+                        <li class="nav-item "><a href="#Contact" class="nav-link text-light">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
         </header>
-        <!--bg-->
-        <div class="view">
-            <div class="full-bg-img">
-
-            </div>
-        </div>
         <!--- Intro-->
-        <div class="row " id="Home">
-            <div class="col-12 d-flex justify-content-center" id="IntroducingMySelf">
+        <div class="row" id="Home">
+            <div class="col-12 d-flex justify-content-center align-items-center image__background"
+                style="height: 100vh;" id="IntroducingMySelf">
                 <div class="col-6">
-                    <div class=" col-12d-flex flex-column ">
-                        <h1 id="Greeting" class="typing"></h1>
-                        <p>Nice to meet you!</p>
-                        <button>Let's talk!</button>
+                    <div class=" col-12 flex-column">
+                        <h1 id="Greeting" class="text-light pt-5 typing"></h1>
+                        <p class="text-light pt-4 pb-4">Nice to meet you!</p>
+                        <button type="button" class="btn btn-light">Let's talk!</button>
                     </div>
                 </div>
             </div>
         </div>
         <!--About-->
-        <div class="row d-flex" id="About">
-            <div class="col-8 justify-content-center">
-                <h2>About</h2>
-                <span>
-                    My name is Marta, I'm a Software Development student (VT II). I'm currently coursing my first year
-                    at U-tad and what can I say... I'm loving it. So far, so good. I started this course doubting about
-                    if
-                    this was my "thing", was I really meant to learn this?... But the programming world was an exciting
-                    adventure waiting to be discovered. I'm really enjoying to learn new stuff every day. I can't wait
-                    for the next thing. I'm always craving to learn more, searching on Youtube and Google.
-                    <br>
-                    I'm really having fun on my way to become a programmer-lady.
-                </span>
-            </div>
-            <div>
+        <div class="row d-flex bg-dark align-items-center" id="About" style="height: 50vh;">
+            <div class="col-12 d-flex justify-content-center">
+                <div class="col-8 p-4 justify-content-center">
+                    <h2 class="p-2 text-light h1">About</h2>
+                    <span class="p-2 text-light">
+                        My name is Marta, I'm a Software Development student (VT II). I'm currently coursing my first
+                        year
+                        at U-tad and what can I say... I'm loving it. So far, so good. I started this course doubting
+                        about
+                        if
+                        this was my "thing", was I really meant to learn this?... But the programming world was an
+                        exciting
+                        adventure waiting to be discovered. I'm really enjoying to learn new stuff every day. I can't
+                        wait
+                        for the next thing. I'm always craving to learn more, searching on Youtube and Google.
+                        <br>
+                        I'm really having fun on my way to become a programmer.
+                    </span>
+                </div>
                 <!--Que estoy aprendiendo y qué quiero aprender . Java. html css js git mysql.-->
             </div>
         </div>
