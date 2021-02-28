@@ -1,5 +1,5 @@
 /**
- * @author Marta Molina Aguilera (Está en inglés porque supongo que si uso esto para buscar trabajo lo van a mirar por dentro.)
+ * @author Marta Molina Aguilera 
  */
 
 //-----------Home Page-----------
@@ -30,8 +30,7 @@ function loop() {
     }
     if (j == phrases[i].length) {
       if (i == phrases.length - 1) {
-        //It stays, therefore it returns false. It was needed to add the textDisplay.innerHTML in this condition in order to show the las "!" and the final push
-        currentPhrase.push(" :)");
+        //Ya se queda, así que retorna fasse. Hay que añadir el textDisplay.innerHTML para que se muestren la exclamación y el :) 
         textDisplay.innerHTML = currentPhrase.join("");
         return false;
       }
@@ -46,4 +45,6 @@ function loop() {
     setTimeout(loop, typingSpeed);
 }
 loop();
+//----------- Nav transparent to dark--------WIP
+const scrollTop = $(window).scrollTop();
 //----------- Button transition ----------- WIP
