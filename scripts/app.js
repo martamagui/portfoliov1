@@ -50,16 +50,19 @@ loop();
 //----------- Button transition ----------- WIP
 //----------- Languajes bars--------------- WIP
 let percentageBar = [25,80,65,18,40];
-let percentageBardsdf = [`JavaBar`,`HTMLBar`,`CSSBar`,`JSBar`,`MYSQLBar`];
-let valuePlsIncrementJava=0;
+let actualPercentageBar = [0,0,0,0,0];
+let barsIds = [`JavaBar`,`HTMLBar`,`CSSBar`,`JSBar`,`MYSQLBar`];
+let actualIndex = 0;
 let time=0;
+let valuePlsIncrementJava=0;
 function barWidthJava(){
   let parent = document.getElementById("JavaBar");
-  time = Math.random() * (100 - 50) + 200;
+   //let actualIndex = (barsIds.indexOf(parent));
+  time = Math.random() * (50) + 200;
   if(valuePlsIncrementJava<25){
     ++valuePlsIncrementJava;
-    console.log(valuePlsIncrementJava);
-    parent.style.width= `${valuePlsIncrementJava}%`;
+    //console.log(valuePlsIncrementJava);
+    parent.style.width = `${valuePlsIncrementJava}%`;
   }setTimeout(barWidthJava, time);
 }
 barWidthJava();
