@@ -48,6 +48,7 @@ loop();
 //----------- Nav transparent to dark--------WIP
 //const scrollTop = $(window).scrollTop();
 //----------- Button transition ----------- WIP
+
 //----------- Languajes bars--------------- WIP
 let percentageBar = [25,80,65,18,40];
 let actualPercentageBar = [0,0,0,0,0];
@@ -55,14 +56,20 @@ let barsIds = [`JavaBar`,`HTMLBar`,`CSSBar`,`JSBar`,`MYSQLBar`];
 let actualIndex = 0;
 let time=0;
 let valuePlsIncrementJava=0;
+let k=0;
+let l=0;
 function barWidthJava(){
-  let parent = document.getElementById("JavaBar");
+  let parent = document.getElementById(barsIds[k]);
    //let actualIndex = (barsIds.indexOf(parent));
-  time = Math.random() * (50) + 200;
-  if(valuePlsIncrementJava<25){
-    ++valuePlsIncrementJava;
+  time = Math.random() * (5) + 30;
+  if(actualPercentageBar[k]<percentageBar[k]){
+    ++actualPercentageBar[k];
     //console.log(valuePlsIncrementJava);
-    parent.style.width = `${valuePlsIncrementJava}%`;
-  }setTimeout(barWidthJava, time);
+    parent.style.width = `${actualPercentageBar[k]}%`;
+  }else if(actualPercentageBar[k]==percentageBar[k]){
+  parent.setAttribute("class", `progress-bar`);
+  ++k
+  }
+  setTimeout(barWidthJava, time);
 }
 barWidthJava();

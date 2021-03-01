@@ -44,4 +44,5 @@
     height: 100%;
     background-image: url("../img/curves.jpg");
     background-size: cover;
+    background-attachment: fixed;
 }

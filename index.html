@@ -25,7 +25,7 @@
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
     <!-- Body-->
-    <div class="container-fluid">
+    <div class="container-fluid image__background">
         <!-- Header/Nav-->
         <header class="row" id="navigation">
             <nav class="navbar navbar-expand-lg navbar-dark  bg-dark fixed-top">
@@ -45,9 +45,9 @@
             </nav>
         </header>
         <!--- Intro-->
-        <div class="row" id="Home">
-            <div class="col-12 d-flex justify-content-center align-items-center image__background"
-                style="height: 100vh;" id="IntroducingMySelf">
+        <div class="row " id="Home">
+            <div class="col-12 d-flex justify-content-center align-items-center" style="height: 100vh;"
+                id="IntroducingMySelf">
                 <div class="col-6">
                     <div class=" col-12 flex-column">
                         <h1 id="Greeting" class="text-light pt-5 typing"></h1>
@@ -59,8 +59,8 @@
             </div>
         </div>
         <!--About-->
-        <div class="row d-flex align-items-center bg-dark" id="About">
-            <div class="col-12 p-5">
+        <div class="row d-flex align-items-center " id="About">
+            <div class="col-12 p-5 bg-dark">
                 <div class="row p-lg-5 d-flex justify-content-center">
                     <div class="col-12 col-lg-6 p-lg-4 justify-content-center">
                         <h2 class="pt-2 pb-5 text-light h1">About</h2>
@@ -85,7 +85,8 @@
             <!--Learning-->
             <div class="col-12 p-5">
                 <div class="row p-lg-5 d-flex justify-content-center ">
-                    <div class="col-12 col-lg-6 p-2 p-lg-5 justify-content-center bg-secondary align-content-center">
+                    <div
+                        class="col-12 col-lg-6 p-2 p-lg-5 justify-content-center bg-secondary align-content-center rounded-3">
                         <div class="row">
                             <div class="col-12">
                                 <h2 class="pb-2 m-1 text-light h1">
@@ -103,38 +104,42 @@
                                     <div class="col-12 pt-1 d-flex flex-column">
                                         <span class="pt-2 pb-2 ms-2 ms-lg-4 text-light">Java</span>
                                         <div class="progress ms-2 ms-lg-4">
-                                            <div class="progress-bar progress-bar-striped bg-ligh" role="progressbar"
-                                                aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" id="JavaBar">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                role="progressbar" aria-valuenow="25" aria-valuemin="0"
+                                                aria-valuemax="100" id="JavaBar">
                                             </div>
                                         </div>
                                         <span class="pt-2 pb-2 ms-2 ms-lg-4 text-light">HTML</span>
                                         <div class="progress ms-2 ms-lg-4">
-                                            <div class="progress-bar progress-bar-striped bg-ligh" role="progressbar"
-                                                style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                                                aria-valuemax="100" id="HTMLBar">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 0%" aria-valuenow="80"
+                                                aria-valuemin="0" aria-valuemax="100" id="HTMLBar">
                                             </div>
                                         </div>
                                         <span class="pt-2 pb-2 ms-2 ms-lg-4 text-light">CSS</span>
                                         <div class="progress ms-2 ms-lg-4">
-                                            <div class="progress-bar progress-bar-striped bg-ligh" role="progressbar"
-                                                style="width: 65%" aria-valuenow="65" aria-valuemin="0"
-                                                aria-valuemax="100" id="CSSBar">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 0%" aria-valuenow="65"
+                                                aria-valuemin="0" aria-valuemax="100" id="CSSBar">
                                             </div>
                                         </div>
                                         <span class="pt-2 pb-2 ms-2 ms-lg-4 text-light">Java Script</span>
                                         <div class="progress ms-2 ms-lg-4">
-                                            <div class="progress-bar progress-bar-striped bg-ligh" role="progressbar"
-                                                style="width: 18%" aria-valuenow="18" aria-valuemin="0"
-                                                aria-valuemax="100" id="JSBar">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 0%" aria-valuenow="18"
+                                                aria-valuemin="0" aria-valuemax="100" id="JSBar">
                                             </div>
                                         </div>
                                         <span class="pt-2 pb-2 ms-2 ms-lg-4 text-light">MYSQL</span>
                                         <div class="progress ms-2 ms-lg-4">
-                                            <div class="progress-bar progress-bar-striped bg-ligh" role="progressbar"
-                                                style="width: 40%" aria-valuenow="40" aria-valuemin="0"
-                                                aria-valuemax="100" id="MYSQLBar">
+                                            <div class="progress-bar progress-bar-striped progress-bar-animated"
+                                                role="progressbar" style="width: 0%" aria-valuenow="40"
+                                                aria-valuemin="0" aria-valuemax="100" id="MYSQLBar">
                                             </div>
                                         </div>
+                                        <br>
+                                        <span class="text-light"></span>
+
                                     </div>
                                 </div>
                             </div>
@@ -149,16 +154,22 @@
                         <div class="row">
                             <div class="col-12">
                                 <h2 class="pb-2 m-1 text-light h1">
-                                    What's comming next
+                                    More information!
                                 </h2>
                             </div>
                         </div>
                         <div class="row p-2">
                             <div class="col-12 p-lg-3 d-flex flex-column">
-                                <span class="text-light ms-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                    Consequatur, maxime? Deserunt dolore, asperiores quo obcaecati rem vitae nihil
-                                    labore laborum veritatis error officiis, natus, necessitatibus dolorum dolores
-                                    quisquam praesentium dignissimos!</span>
+                                <span class="text-light ms-2">
+                                    I'm always trying to challenge my self and learn during the proccess. <br><br>
+                                    In 2020 Christmas I took part in a programming competition called "Las doce
+                                    uvas, organised by the "Complutense University". I used Java to slove those
+                                    challenges... And I achived the 4th place in the VT II category!</span> <br>
+                                <h3 class="text-light">What's comming next</h3>
+                                <br>
+                                <span class="text-light ms-2">As soon as I feel more secure enough typing on JavaScript.
+                                    I'm planning to learn use some JavaScript library (I haven't decided wich one yet,
+                                    maybe Vue). </span>
                             </div>
                         </div>
                     </div>
