@@ -73,7 +73,7 @@
     list-style: none;
 }
 
-.general__list, li::before {
+.general__list li::before {
     content: "●";
     color: #f0f0f0;
     display: inline-block;
