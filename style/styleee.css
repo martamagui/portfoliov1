@@ -83,3 +83,21 @@
 .contest {
     font-size: 2.5vh;
 }
+
+/*Projects*/
+
+.project__title {
+    font-family: 'Playfair Display', serif;
+    font-size: 8vh;
+    text-shadow: 2px 4px 8px #000;
+}
+
+.image__card {
+    height: 50%;
+}
+
+/*Footer*/
+
+.fa-linkedin {
+    color: white;
+}
