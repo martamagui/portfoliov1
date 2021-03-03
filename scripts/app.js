@@ -17,7 +17,7 @@ function loop() {
   textDisplay.innerHTML = currentPhrase.join("");
   delTyping = deleteLettter ? 100 : 300;
   typingSpeed = Math.random() * (100 - 50) + delTyping;
-  console.log(phrases[i]);
+  /*console.log(phrases[i]);*/
 
     if (!deleteLettter && j <= phrases[i].length) {
       currentPhrase.push(phrases[i][j]);
@@ -58,18 +58,32 @@ let time=0;
 let valuePlsIncrementJava=0;
 let k=0;
 let l=0;
-function barWidthJava(){
+let ejecutar= false;
+
+window.addEventListener('scroll', ()=>{
+  const scrllableY = document.documentElement.scrollHeight-window.innerHeight;
+  const scrolleado =  window.scrollY;
+  console.log(scrllableY + " " +scrolleado);
+  let learningDivH = Math.round(scrllableY/3.5);
+  console.log(learningDivH);
+  if((scrolleado>=learningDivH)&&(ejecutar==false)){
+    barWidthFill();
+    ejecutar=true;
+  }
+});
+
+function barWidthFill(){
+  console.log("hola");
   let parent = document.getElementById(barsIds[k]);
-   //let actualIndex = (barsIds.indexOf(parent));
-  time = Math.random() * (5) + 30;
-  if(actualPercentageBar[k]<percentageBar[k]){
+  //let actualIndex = (barsIds.indexOf(parent));
+  time = Math.random() * (10);
+  if((actualPercentageBar[k]<percentageBar[k])&&(k<5)){
     ++actualPercentageBar[k];
     //console.log(valuePlsIncrementJava);
     parent.style.width = `${actualPercentageBar[k]}%`;
   }else if(actualPercentageBar[k]==percentageBar[k]){
-  parent.setAttribute("class", `progress-bar`);
-  ++k
-  }
-  setTimeout(barWidthJava, time);
+    parent.setAttribute("class", "progress-bar");
+    ++k
+  }setTimeout(barWidthJava, time);
+  
 }
-barWidthJava();
