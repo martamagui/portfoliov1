@@ -30,7 +30,7 @@ function loop() {
     }
     if (j == phrases[i].length) {
       if (i == phrases.length - 1) {
-        //Ya se queda, así que retorna fasse. Hay que añadir el textDisplay.innerHTML para que se muestren la exclamación y el :) 
+        //Ya se queda, así que retorna frase. Hay que añadir el textDisplay.innerHTML para que se muestren la exclamación y el :) 
         textDisplay.innerHTML = currentPhrase.join("");
         return false;
       }

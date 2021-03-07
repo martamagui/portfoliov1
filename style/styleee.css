@@ -5,9 +5,6 @@
     line-height: 3.5vh;
 }
 
-/*Apunte : Es importante poner target="blank" para que los enlaces de linkedin y se abra en una nueva pastaña
-*/
-
 /*nav*/
 
 #navigation {
@@ -28,6 +25,10 @@
     font-family: 'Playfair Display', serif;
     font-size: 7.5vh;
     text-shadow: 2px 4px 8px #000;
+}
+
+.intro__style {
+    width: 50%;
 }
 
 .button__font {
