@@ -64,7 +64,7 @@ window.addEventListener('scroll', ()=>{
   const scrllableY = document.documentElement.scrollHeight-window.innerHeight;
   const scrolleado =  window.scrollY;
   console.log(scrllableY + " " +scrolleado);
-  let learningDivH = Math.round(scrllableY/3.5);
+  let learningDivH = Math.round(scrllableY/2.8);
   console.log(learningDivH);
   if((scrolleado>=learningDivH)&&(ejecutar==false)){
     barWidthFill();
@@ -76,14 +76,14 @@ function barWidthFill(){
   console.log("hola");
   let parent = document.getElementById(barsIds[k]);
   //let actualIndex = (barsIds.indexOf(parent));
-  time = Math.random() * (10);
+  time = Math.random() * (100)+400;
   if((actualPercentageBar[k]<percentageBar[k])&&(k<5)){
     ++actualPercentageBar[k];
     //console.log(valuePlsIncrementJava);
     parent.style.width = `${actualPercentageBar[k]}%`;
   }else if(actualPercentageBar[k]==percentageBar[k]){
     parent.setAttribute("class", "progress-bar");
-    ++k
-  }setTimeout(barWidthJava, time);
+    ++k;
+  }setTimeout(barWidthFill(), time);
   
 }

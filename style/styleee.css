@@ -101,3 +101,26 @@
 .fa-linkedin {
     color: white;
 }
+
+/*form*/
+
+#formCard {
+    margin-top: 10%;
+    width: 80%;
+    box-shadow: 1vh 1vh 1vh 0 rgba(0, 0, 0, 0.3);
+}
+
+.button__style {
+    outline: none;
+    box-shadow: 0 0.2vh 0.2vh 0 rgba(0, 0, 0, 0.1);
+}
+
+/*qrys*/
+
+@media only screen and (min-width: 992px) {
+    #formCard {
+        margin-top: 1.5%;
+        width: 50%;
+        box-shadow: 1vh 1vh 1vh 0 rgba(0, 0, 0, 0.4);
+    }
+}
